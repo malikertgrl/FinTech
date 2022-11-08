@@ -21,7 +21,7 @@ const PaymentRow = ({source,total, type,number}:Props) => {
                 <Text style={styles.paymentText}>{type}</Text>
 
             </View>
-            <View style={{marginTop:5}} >
+            <View style={{marginTop:3}} >
                 <Text style={styles.paymentText2}>{`İşlem Adedi: ${number}`}</Text>
             </View>
         </View>

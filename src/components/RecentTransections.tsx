@@ -23,7 +23,7 @@ export default RecentTransactions
 
 const styles = StyleSheet.create({
     container: {
-        margin: 10,
+        marginHorizontal: 16,
         borderBottomWidth: 1,
         borderBottomColor: Colors.gray,
         paddingBottom:10

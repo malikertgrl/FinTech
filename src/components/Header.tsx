@@ -9,6 +9,7 @@ const Header = () => {
                 <TouchableOpacity onPress={() => console.log('drawe')}>
                     <Image
                         source={require('../assets/Images/DrawerIcon.png')}
+                        style={{width:24,height:24}}
                     />
                 </TouchableOpacity>
                 </View>
@@ -17,12 +18,15 @@ const Header = () => {
                     <Image
                         source={require('../assets/Images/Logo.png')}
                         // style={styles.logo}
+
                     />
                     <Text style={styles.text}>Netahsilat</Text>
                 </View>
                 <View style={{marginRight:16}}>
                 <Image
                     source={require('../assets/Images/tlIcon.png')}
+                    style={{width:31,height:31}}
+
                 />
                 </View>
                 
@@ -41,25 +45,25 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         borderBottomWidth:2,
         borderBottomColor:Colors.primary,
-        height:'13%'
+        height:'12%',
     },
     innerStyle: {
         alignItems: 'center',
 
     },
     logo: {
-    //     // width:108,
-    //     // maxHeight:29,
-
-    //     // aspectRatio: 3.71,
-    //     // height: '50%',
-    //     // width: undefined,
+        width:108,
+        height:29,
+        // aspectRatio: 3.704615,
+        // width: '20%',
+        // height: undefined,
     
     },
 
     text: {
         color: Colors.green,
         fontSize: Fonts.sml,
+        fontWeight:'500',
         fontStyle: 'italic'
     }
 })

@@ -32,7 +32,7 @@ export default Payment
 
 const styles = StyleSheet.create({
     container: {
-        marginHorizontal:10,
+        marginHorizontal:16,
         borderBottomWidth:1,
         borderBottomColor:Colors.gray
      }

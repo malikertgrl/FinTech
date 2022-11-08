@@ -26,7 +26,7 @@ export default InnerDate
 
 const styles = StyleSheet.create({
     innerText: {
-        padding: 10,
+        padding: 7,
         margin: 5,
         // borderLeftWidth:1,
         // borderLeftColor:Colors.gray
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         margin: 5,
         backgroundColor: Colors.primary,
         borderRadius: 8,
-        padding: 10
+        padding: 7
 
     },
     text: {

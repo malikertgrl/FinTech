@@ -38,7 +38,7 @@ export default Banks
 
 const styles = StyleSheet.create({
     container: {
-        margin: 10,
+        margin: 16,
         borderBottomWidth: 1,
         borderBottomColor: Colors.gray
     },

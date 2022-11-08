@@ -5,14 +5,11 @@ import Dates from './src/components/Dates'
 import Banks from './src/components/Banks'
 import RecentTransactions from './src/components/RecentTransections'
 import GetPaidMenus from './src/components/GetPaidMenus'
+import Home from './src/screens/Home'
 const App = () => {
   return (
     <View>
-      <Header />
-      <Dates />
-      <Banks />
-      <RecentTransactions />
-      <GetPaidMenus/>
+      <Home />
     </View>
   )
 }

@@ -23,6 +23,7 @@ export default Dates
 
 const styles = StyleSheet.create({
   container: {
+    marginTop:13,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -32,7 +33,6 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     marginLeft: '21%',
     marginRight: '21%'
-
   }
 
 })

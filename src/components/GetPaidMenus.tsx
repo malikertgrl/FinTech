@@ -5,13 +5,16 @@ import { Colors, Fonts } from '../constants'
 const GetPaidMenus = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.header} >Ödeme Al Menüleri </Text>
+            <View>
+                <Text style={styles.header} >Ödeme Al Menüleri</Text>
+            </View>
             <View style={styles.menu}>
-                <Image source={require('../assets/Images/creditCard.png')} />
+
+                <Image source={require('../assets/Images/creditCard.png')} 
+                 />
                 <Image source={require('../assets/Images/Email.png')} />
                 <Image source={require('../assets/Images/Sms.png')} />
                 <Image source={require('../assets/Images/QrCode.png')} />
-
             </View>
 
         </View>
@@ -22,10 +25,7 @@ export default GetPaidMenus
 
 const styles = StyleSheet.create({
     container: {
-        margin: 10,
-        borderBottomWidth: 1,
-        borderBottomColor: Colors.gray,
-        paddingBottom: 10,
+        margin: 16,
 
     },
     header: {
@@ -33,6 +33,10 @@ const styles = StyleSheet.create({
         fontWeight: '700'
     },
     menu: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        alignItems:'center',
+        justifyContent:'center',
+
+
     }
 })
