@@ -4,7 +4,7 @@ import { Colors, Fonts } from '../constants'
 import InnerDate from './InnerDate'
 import Payment from './Payment'
 
-const Dates = () => {
+const Transections = () => {
   const [isSelected, setIsSelected] = useState(false)
   return (
     <View>
@@ -20,7 +20,7 @@ const Dates = () => {
 
 }
 
-export default Dates
+export default Transections
 
 const styles = StyleSheet.create({
   container: {

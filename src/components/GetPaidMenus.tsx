@@ -4,13 +4,12 @@ import { Colors, Fonts } from '../constants'
 import { SvgUri } from 'react-native-svg'
 import PaymentBottom from './PaymentBottom'
 import Card from './Card'
+import Headertext from './Headertext'
 
 const GetPaidMenus = () => {
     return (
         <Card style={styles.payment} >
-            <View>
-                <Text style={styles.header} >Ödeme Al Menüleri</Text>
-            </View>
+            <Headertext title='Ödeme Al Menüleri' />
             <View style={styles.menu}>
                 <PaymentBottom uri={Image.resolveAssetSource(require('../assets/svgs/credit.svg')).uri} />
                 <PaymentBottom uri={Image.resolveAssetSource(require('../assets/svgs/email.svg')).uri} />
@@ -26,10 +25,6 @@ export default GetPaidMenus
 const styles = StyleSheet.create({
     payment: {
         borderBottomWidth:0
-    },
-    header: {
-        fontSize: Fonts.f18,
-        fontWeight: '700'
     },
     menu: {
         flexDirection: 'row',

@@ -3,13 +3,14 @@ import React from 'react'
 import { Colors, Fonts } from '../constants'
 import Person from './Person'
 import Card from './Card'
+import Headertext from './Headertext'
 
 
 const RecentTransactions = () => {
     return (
         <Card>
             <View style={styles.HeaderContainer}>
-                <Text style={styles.header} >Son İşlemler </Text>
+                <Headertext title='Son İşlemler' />
                 <TouchableOpacity>
                     <Text style={styles.buttonAll}>Tümünü Gör</Text>
                 </TouchableOpacity>
@@ -27,10 +28,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-    },
-    header: {
-        fontSize: Fonts.f18,
-        fontWeight: '700'
     },
     buttonAll: {
         fontSize: Fonts.f14,

@@ -8,7 +8,7 @@ const dimensionsWidth = Dimensions.get('window').width
 const Header = () => {
     return (
         <View style={styles.containerStyle}>
-            <View style={{ marginLeft: 16 }} >
+            <View style={styles.marginL} >
                 <TouchableOpacity onPress={() => console.log('drawe')}>
                     <SvgUri
                         style={styles.homeButton}
@@ -24,7 +24,7 @@ const Header = () => {
                 />
                 <Text style={styles.text}>Netahsilat</Text>
             </View>
-            <View style={{ marginRight: 16 }}>
+            <View style={styles.marginR}>
 
                 <SvgUri
                     style={styles.tlIcon}
@@ -65,5 +65,8 @@ const styles = StyleSheet.create({
         fontStyle: 'italic'
     },
     homeButton: { aspectRatio: 1, width: dimensionsWidth / 100 * 6.39, height: undefined },
-    tlIcon: { aspectRatio: 1, width: dimensionsWidth / 100 * 8.29, height: undefined }
+    tlIcon: { aspectRatio: 1, width: dimensionsWidth / 100 * 8.29, height: undefined },
+    marginR: {marginRight:16},
+    marginL: {marginLeft:16},
+
 })

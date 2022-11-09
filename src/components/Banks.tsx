@@ -3,11 +3,12 @@ import React from 'react'
 import { Colors, Fonts } from '../constants'
 import Bank from './Bank'
 import Card from './Card'
+import HeaderText from './Headertext'
 
 const Banks = () => {
     return (
         <Card>
-            <Text style={styles.headerText}>Banka Bazında Ödemeler</Text>
+            <HeaderText title='Banka Bazında Ödemeler' />
             <View style={styles.dateStyle}>
                 <Text style={styles.text}>01.01.2022 tarihinden itibaren</Text>
             </View>
@@ -38,11 +39,6 @@ const Banks = () => {
 export default Banks
 
 const styles = StyleSheet.create({
-  
-    headerText: {
-        fontSize: Fonts.f18,
-        fontWeight: '700',
-    },
     text: {
         fontSize: Fonts.f14,
         fontWeight: '400',
