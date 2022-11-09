@@ -8,12 +8,14 @@ import GetPaidMenus from './src/components/GetPaidMenus'
 import Home from './src/screens/Home'
 const App = () => {
   return (
-    <View>
+    <SafeAreaView style={styles.container}>
       <Home />
-    </View>
+    </SafeAreaView>
   )
 }
 
 export default App
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  container: {flex:1}
+})

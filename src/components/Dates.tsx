@@ -11,6 +11,7 @@ const Dates = () => {
       <View style={styles.container}>
         <InnerDate isSelected={true} setIsSelected={setIsSelected} title='Günlük' />
         <InnerDate isSelected={isSelected} setIsSelected={setIsSelected} title='Aylık' />
+        <Text style= {styles.seperator}> | </Text>
         <InnerDate isSelected={isSelected} setIsSelected={setIsSelected} title='Yıllık' />
       </View>
       <Payment/>
@@ -23,16 +24,18 @@ export default Dates
 
 const styles = StyleSheet.create({
   container: {
-    marginTop:13,
+    marginTop:16,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     borderWidth: 1,
     borderColor: Colors.gray,
     borderRadius: 8,
-    marginVertical: 8,
     marginLeft: '21%',
     marginRight: '21%'
+  },
+  seperator: {
+    color:Colors.gray
   }
 
 })

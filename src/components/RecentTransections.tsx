@@ -2,11 +2,12 @@ import { StyleSheet, Text, Touchable, TouchableOpacity, View } from 'react-nativ
 import React from 'react'
 import { Colors, Fonts } from '../constants'
 import Person from './Person'
+import Card from './Card'
 
 
 const RecentTransactions = () => {
     return (
-        <View style={styles.container}>
+        <Card>
             <View style={styles.HeaderContainer}>
                 <Text style={styles.header} >Son İşlemler </Text>
                 <TouchableOpacity>
@@ -15,20 +16,13 @@ const RecentTransactions = () => {
             </View>
             <Person name = 'Fatih Öztürk' total ='17.865.522,19 TL' status = 'Başarılı' date= '22.12.2021 | 10:47:38' />
             <Person name = 'Fatih Öztürk' total ='17.865.522,19 TL' status = 'Beklemede' date= '22.12.2021 | 10:47:38' />
-        </View>
+        </Card>
     )
 }
 
 export default RecentTransactions
 
 const styles = StyleSheet.create({
-    container: {
-        marginHorizontal: 16,
-        borderBottomWidth: 1,
-        borderBottomColor: Colors.gray,
-        paddingBottom:10
-
-    },
     HeaderContainer: {
         flexDirection: 'row',
         alignItems: 'center',

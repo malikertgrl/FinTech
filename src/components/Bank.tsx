@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image } from 'react-native'
 import React from 'react'
-import { Colors } from '../constants';
+import { Colors, Fonts } from '../constants';
 
 export interface Props {
     name: string;
@@ -43,7 +43,7 @@ export default Bank
 
 const styles = StyleSheet.create({
     bankStyle: { flexDirection: 'row', justifyContent:'space-between', marginVertical:8 },
-    bankType: { marginLeft: 10 },
+    bankType: { marginLeft: 10, fontSize:Fonts.f14, fontWeight:'400' },
     totalStyle:{flexDirection:'row', alignItems:'center'},
     innerBankStyle:{flexDirection:'row', alignItems:'center'},
     text:{color:Colors.graySecondary},

@@ -1,38 +1,39 @@
-import {StyleSheet, Text, View, Image, TouchableOpacity, SafeAreaView,Dimensions } from 'react-native'
+import { StyleSheet, Text, View, Image, TouchableOpacity, SafeAreaView, Dimensions } from 'react-native'
 import React from 'react'
 import { Colors, Fonts } from '../constants'
+import { SvgUri } from 'react-native-svg'
+
+const dimensionsWidth = Dimensions.get('window').width
 
 const Header = () => {
     return (
-             <SafeAreaView style={styles.containerStyle}>
-                <View style={{marginLeft:16}}>
+        <View style={styles.containerStyle}>
+            <View style={{ marginLeft: 16 }} >
                 <TouchableOpacity onPress={() => console.log('drawe')}>
-                    <Image
-                        source={require('../assets/Images/DrawerIcon.png')}
-                        style={{width:24,height:24}}
+                    <SvgUri
+                        style={styles.homeButton}
+                        uri={Image.resolveAssetSource(require('../assets/svgs/homeSvg.svg')).uri}
                     />
                 </TouchableOpacity>
-                </View>
-               
-                <View style={styles.innerStyle}>
-                    <Image
-                        source={require('../assets/Images/Logo.png')}
-                        // style={styles.logo}
+            </View>
 
-                    />
-                    <Text style={styles.text}>Netahsilat</Text>
-                </View>
-                <View style={{marginRight:16}}>
-                <Image
-                    source={require('../assets/Images/tlIcon.png')}
-                    style={{width:31,height:31}}
-
+            <View style={styles.innerStyle}>
+                <SvgUri
+                    style={styles.logo}
+                    uri={Image.resolveAssetSource(require('../assets/svgs/LogoSvg.svg')).uri}
                 />
-                </View>
-                
-            </SafeAreaView>
+                <Text style={styles.text}>Netahsilat</Text>
+            </View>
+            <View style={{ marginRight: 16 }}>
 
-           
+                <SvgUri
+                    style={styles.tlIcon}
+                    uri={Image.resolveAssetSource(require('../assets/svgs/tlSvg.svg')).uri}
+                />
+            </View>
+        </View>
+
+
     )
 }
 
@@ -43,27 +44,26 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        borderBottomWidth:2,
-        borderBottomColor:Colors.primary,
-        height:'12%',
+        borderBottomWidth: 2,
+        borderBottomColor: Colors.primary,
+        paddingVertical: 8,
     },
     innerStyle: {
         alignItems: 'center',
 
     },
     logo: {
-        width:108,
-        height:29,
-        // aspectRatio: 3.704615,
-        // width: '20%',
-        // height: undefined,
-    
-    },
+        aspectRatio: 3.704615,
+        width: dimensionsWidth / 100 * 28.79,
+        height: undefined,
 
+    },
     text: {
         color: Colors.green,
         fontSize: Fonts.sml,
-        fontWeight:'500',
+        fontWeight: '500',
         fontStyle: 'italic'
-    }
+    },
+    homeButton: { aspectRatio: 1, width: dimensionsWidth / 100 * 6.39, height: undefined },
+    tlIcon: { aspectRatio: 1, width: dimensionsWidth / 100 * 8.29, height: undefined }
 })

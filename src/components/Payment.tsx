@@ -1,39 +1,32 @@
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image} from 'react-native'
 import React from 'react'
-import { Colors, Fonts } from '../constants'
 import PaymentRow from './PaymentRow'
+import Card from './Card'
 
 const Payment = () => {
     return (
-        <View style={styles.container}>
+        <Card>
             <PaymentRow
-                source={require('../assets/Images/Payment.png')}
+                uri={Image.resolveAssetSource(require('../assets/svgs/payment.svg')).uri}
                 total='100.00 TL'
                 type= 'Ödeme'
                 number={1}
             />
             <PaymentRow
-                source={require('../assets/Images/Cancel.png')}
+               uri={Image.resolveAssetSource(require('../assets/svgs/cancel.svg')).uri}
                 total='0.00 TL'
                 type= 'İptal/İade'
                 number={0}
                  />
             <PaymentRow
-                source={require('../assets/Images/Total.png')}
+             uri={Image.resolveAssetSource(require('../assets/svgs/total.svg')).uri}
                 total='100.00 TL' 
                 type= 'Toplam'
                 number={1}
                 />
-        </View>
+        </Card>
     )
 }
 
 export default Payment
 
-const styles = StyleSheet.create({
-    container: {
-        marginHorizontal:16,
-        borderBottomWidth:1,
-        borderBottomColor:Colors.gray
-     }
-})

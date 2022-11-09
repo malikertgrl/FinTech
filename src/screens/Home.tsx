@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import Header from '../components/Header'
 import Dates from '../components/Dates'
@@ -8,11 +8,13 @@ import GetPaidMenus from '../components/GetPaidMenus'
 
 const Home = () => {
     return (
-        <View>
+        <View style={styles.flex}>
             <Header />
+            {/* <ScrollView style={styles.flex}> */}
             <Dates />
             <Banks />
             <RecentTransactions />
+            {/* </ScrollView> */}
             <GetPaidMenus />
         </View>
     )
@@ -20,4 +22,8 @@ const Home = () => {
 
 export default Home
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    flex: {
+        flex: 1
+    }
+})

@@ -2,10 +2,11 @@ import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Colors, Fonts } from '../constants'
 import Bank from './Bank'
+import Card from './Card'
 
 const Banks = () => {
     return (
-        <View style={styles.container}>
+        <Card>
             <Text style={styles.headerText}>Banka Bazında Ödemeler</Text>
             <View style={styles.dateStyle}>
                 <Text style={styles.text}>01.01.2022 tarihinden itibaren</Text>
@@ -30,18 +31,14 @@ const Banks = () => {
             />
 
 
-        </View>
+        </Card>
     )
 }
 
 export default Banks
 
 const styles = StyleSheet.create({
-    container: {
-        margin: 16,
-        borderBottomWidth: 1,
-        borderBottomColor: Colors.gray
-    },
+  
     headerText: {
         fontSize: Fonts.f18,
         fontWeight: '700',

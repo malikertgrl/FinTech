@@ -1,32 +1,31 @@
 import { Image, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import { Colors, Fonts } from '../constants'
+import { SvgUri } from 'react-native-svg'
+import PaymentBottom from './PaymentBottom'
+import Card from './Card'
 
 const GetPaidMenus = () => {
     return (
-        <View style={styles.container}>
+        <Card style={styles.payment} >
             <View>
                 <Text style={styles.header} >Ödeme Al Menüleri</Text>
             </View>
             <View style={styles.menu}>
-
-                <Image source={require('../assets/Images/creditCard.png')} 
-                 />
-                <Image source={require('../assets/Images/Email.png')} />
-                <Image source={require('../assets/Images/Sms.png')} />
-                <Image source={require('../assets/Images/QrCode.png')} />
+                <PaymentBottom uri={Image.resolveAssetSource(require('../assets/svgs/credit.svg')).uri} />
+                <PaymentBottom uri={Image.resolveAssetSource(require('../assets/svgs/email.svg')).uri} />
+                <PaymentBottom uri={Image.resolveAssetSource(require('../assets/svgs/sms.svg')).uri} />
+                <PaymentBottom uri={Image.resolveAssetSource(require('../assets/svgs/qr.svg')).uri} />
             </View>
-
-        </View>
+        </Card>
     )
 }
 
 export default GetPaidMenus
 
 const styles = StyleSheet.create({
-    container: {
-        margin: 16,
-
+    payment: {
+        borderBottomWidth:0
     },
     header: {
         fontSize: Fonts.f18,
@@ -34,9 +33,10 @@ const styles = StyleSheet.create({
     },
     menu: {
         flexDirection: 'row',
-        alignItems:'center',
-        justifyContent:'center',
+        alignItems: 'center',
+        justifyContent: 'center',
 
 
-    }
+    },
+   
 })
