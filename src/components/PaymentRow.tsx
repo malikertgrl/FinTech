@@ -51,6 +51,6 @@ const styles = StyleSheet.create({
     innerRow: { flexDirection: 'row' },
     textContainer: { marginLeft: 12 },
     paymentText: { color: Colors.graySecondary, fontSize: Fonts.f14 },
-    paymentText2: { fontSize: Fonts.f16 },
+    paymentText2: { fontSize: Fonts.f16, fontWeight:'700' },
     mrgnTop:{marginTop:3}
 })
