@@ -10,9 +10,11 @@ const Home = () => {
     return (
         <View style={styles.flex}>
             <Header />
+            {/* <ScrollView style={styles.flex}> */}
             <Transections/>
             <Banks />
             <RecentTransactions />
+            {/* </ScrollView> */}
             <GetPaidMenus />
         </View>
     )
