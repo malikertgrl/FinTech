@@ -30,7 +30,7 @@ export default Person
 
 const styles = StyleSheet.create({
     container: {
-        marginVertical: 10,
+        marginVertical: 6,
     },
     innerContainer: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
     statusContainer: { flexDirection: 'row', justifyContent: 'space-between', marginTop: 3 },

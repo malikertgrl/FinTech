@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: Colors.gray,
     borderRadius: 8,
-    marginLeft: '19,19%',
-    marginRight: '19,19%'
+    marginLeft: '19.19%',
+    marginRight: '19.19%'
   },
   seperator: {
     color: Colors.gray
