@@ -9,13 +9,10 @@ export interface Props {
 }
 const InnerDate = ({ isSelected, title, setIsSelected }: Props) => {
 
-    const setSelect = () => {
-        setIsSelected()
-    }
 
     return (
         <View style={isSelected ? styles.SelectedInnerText : styles.innerText}>
-            <TouchableOpacity onPress={val => setIsSelected(false)}>
+            <TouchableOpacity onPress={() => console.log('first')}>
                 <Text style={isSelected ? styles.selectedtext : styles.text}>{title}</Text>
             </TouchableOpacity>
         </View>
@@ -26,14 +23,11 @@ export default InnerDate
 
 const styles = StyleSheet.create({
     innerText: {
-        padding: 7,
         margin: 5,
-        // borderLeftWidth:1,
-        // borderLeftColor:Colors.gray
+        padding: 7
+
     },
     SelectedInnerText: {
-        // marginHorizontal:5,
-        // marginVertical:5,
         margin: 5,
         backgroundColor: Colors.primary,
         borderRadius: 8,

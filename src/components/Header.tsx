@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
     },
     homeButton: { aspectRatio: 1, width: dimensionsWidth / 100 * 6.39, height: undefined },
     tlIcon: { aspectRatio: 1, width: dimensionsWidth / 100 * 8.29, height: undefined },
-    marginR: {marginRight:16},
-    marginL: {marginLeft:16},
+    marginR: { marginRight: 16 },
+    marginL: { marginLeft: 16 },
 
 })

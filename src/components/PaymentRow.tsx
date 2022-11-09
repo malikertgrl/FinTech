@@ -22,7 +22,7 @@ const PaymentRow = ({ uri, total, type, number }: Props) => {
                         <Text style={styles.paymentText}>{type}</Text>
 
                     </View>
-                    <View style={{ marginTop: 3 }} >
+                    <View style={styles.mrgnTop} >
                         <Text style={styles.paymentText2}>{`İşlem Adedi: ${number}`}</Text>
                     </View>
                 </View>
@@ -42,13 +42,15 @@ export default PaymentRow
 
 const styles = StyleSheet.create({
     paymentRow: {
+        marginTop:4,
         marginBottom: 8,
         flexDirection: 'row',
         alignItems: 'flex-end',
         justifyContent: 'space-between'
     },
     innerRow: { flexDirection: 'row' },
-    textContainer: { marginLeft: 5 },
+    textContainer: { marginLeft: 12 },
     paymentText: { color: Colors.graySecondary, fontSize: Fonts.f14 },
-    paymentText2: { fontSize: Fonts.f16 }
+    paymentText2: { fontSize: Fonts.f16 },
+    mrgnTop:{marginTop:3}
 })

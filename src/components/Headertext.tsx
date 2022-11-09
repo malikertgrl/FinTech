@@ -5,7 +5,7 @@ export interface Props {
     title: string
 }
 
-const Headertext = ({ title }: Props) =>  <Text style={styles.headerText}>{title}</Text>
+const Headertext = ({ title }: Props) => <Text style={styles.headerText}>{title}</Text>
 
 
 

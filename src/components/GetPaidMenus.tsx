@@ -24,7 +24,7 @@ export default GetPaidMenus
 
 const styles = StyleSheet.create({
     payment: {
-        borderBottomWidth:0
+        borderBottomWidth: 0
     },
     menu: {
         flexDirection: 'row',
@@ -33,5 +33,5 @@ const styles = StyleSheet.create({
 
 
     },
-   
+
 })

@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         marginVertical: 10,
     },
     innerContainer: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
-    statusContainer: { flexDirection: 'row', justifyContent: 'space-between',marginTop:3 },
+    statusContainer: { flexDirection: 'row', justifyContent: 'space-between', marginTop: 3 },
     name: {
         fontSize: Fonts.f14,
         fontWeight: '500'

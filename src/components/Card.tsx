@@ -3,14 +3,14 @@ import React from 'react'
 import { Colors } from '../constants'
 
 export interface Props {
-    children:any;
-    style?:any
+  children: any;
+  style?: any
 }
 
-const Card = ({children,style}:Props) => {
+const Card = ({ children, style }: Props) => {
   return (
-    <View style={[styles.container,{...style}]}>
-     {children}
+    <View style={[styles.container, { ...style }]}>
+      {children}
     </View>
   )
 }
@@ -18,11 +18,11 @@ const Card = ({children,style}:Props) => {
 export default Card
 
 const styles = StyleSheet.create({
-    container: {
-        marginTop:8,
-        marginHorizontal: 16,
-        borderBottomWidth: 1,
-        borderBottomColor: Colors.gray,
+  container: {
+    marginTop: 8,
+    marginHorizontal: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.gray,
 
-    },
+  },
 })
